@@ -391,6 +391,7 @@
 "Assets/Scripts/MouseCursorTest.cs"
 "Assets/Scripts/Target_para.cs"
 "Assets/Scripts/test_01.cs"
+"Assets/Scripts/wave.cs"
 "Assets/Uduino/Examples/Advanced/Arduino Mega/MegaReadWrite.cs"
 "Assets/Uduino/Examples/Advanced/BoardType/ChangeBoardType.cs"
 "Assets/Uduino/Examples/Advanced/Bundle/Bundle.cs"

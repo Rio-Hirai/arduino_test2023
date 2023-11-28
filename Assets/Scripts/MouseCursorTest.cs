@@ -23,6 +23,9 @@ public class MouseCursorTest : MonoBehaviour
         {
             // オブジェクトに衝突した場合、衝突地点の座標を取得
             MousePoint = hit.point;
+        } else
+        {
+            MousePoint = Vector3.zero;
         }
     }
 }

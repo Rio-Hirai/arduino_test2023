@@ -84,6 +84,7 @@
     <Compile Include="Assets\Uduino\Examples\Basic\AnalogWrite\AnalogWrite.cs" />
     <Compile Include="Assets\Scripts\MouseCursorTest.cs" />
     <Compile Include="Assets\Uduino\Examples\Advanced\ButtonTrigger\ButtonTrigger.cs" />
+    <Compile Include="Assets\Scripts\wave.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\UduinoConnection.cs" />
     <Compile Include="Assets\Uduino\Examples\Basic\DigitalReadButton\DigitalReadButton.cs" />
     <Compile Include="Assets\Uduino\Scripts\Boards\DesktopSerial\UduinoDevice_DesktopSerial.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Uduino\Scripts\Boards\UduinoDevice.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Scripts\PlanToWavee.shader" />
     <None Include="Assets\Uduino\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

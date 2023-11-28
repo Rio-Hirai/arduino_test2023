@@ -18,13 +18,18 @@ public class test_01 : MonoBehaviour
     public int blinkpower_6 = 100;
     [Range(97, 255)]
     public int balance = 100;
+    [Range(1, 6)]
+    public float distance = 0;
+
     public int rebalance = 0;
-    private int basevalue;
+    public int basevalue;
     public bool reverse = false;
-    // Start is called before the first frame update
 
     public int maxvalue = 255;
     public int minvalue = 97;
+
+    public float mindistance = 0;
+    public float maxdistance = 0;
 
     void Start()
     {
@@ -50,7 +55,15 @@ public class test_01 : MonoBehaviour
         //UduinoManager.Instance.analogWrite(9, blinkpower_9);
         //UduinoManager.Instance.analogWrite(6, blinkpower_6);
 
-        basevalue = balance;
+        basevalue = CalculateA(distance);
+        if (basevalue > maxvalue)
+        {
+            basevalue = maxvalue;
+        }
+        else if (basevalue < minvalue)
+        {
+            basevalue = minvalue;
+        }
         if (reverse)
         {
             rebalance = basevalue;
@@ -64,10 +77,14 @@ public class test_01 : MonoBehaviour
         UduinoManager.Instance.analogWrite(10, rebalance);
     }
 
+    int CalculateA(float A)
+    {
+        float m = (maxvalue - minvalue) / (maxdistance - mindistance);
+        return (int)((A - mindistance) * m + minvalue);
+    }
+
     int CalculateB(int A)
     {
-        // B‚Ì’l‚ðŒvŽZ
         return (maxvalue - A) + minvalue;
-        //return Mathf.RoundToInt(m * A + c);
     }
 }
