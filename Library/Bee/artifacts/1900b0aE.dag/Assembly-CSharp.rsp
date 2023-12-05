@@ -389,7 +389,12 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/DynamicBezierCurve.cs"
+<<<<<<< Updated upstream
+=======
+"Assets/Scripts/MainManager.cs"
+>>>>>>> Stashed changes
 "Assets/Scripts/MouseCursorTest.cs"
+"Assets/Scripts/RayCast.cs"
 "Assets/Scripts/Target_para.cs"
 "Assets/Scripts/test_01.cs"
 "Assets/Scripts/wave.cs"
@@ -443,7 +448,7 @@
 /nowarn:1701
 /nowarn:1702
 /utf8output
-/preferreduilang:ja
+/preferreduilang:en-US
 
 
 

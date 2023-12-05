@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class DynamicBezierCurve : MonoBehaviour
 {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     public LineRenderer lineRenderer;
     public Transform pointA; // 始点A
     public Transform pointB; // 中間点B
     public Transform pointBPrime; // 終点B'
     public int numPoints = 50; // カーブに使用するポイントの数
     public Vector3[] positions; // ポイントの位置を格納する配列
+<<<<<<< Updated upstream
     public float lineWidth = 0.1f; // レイの太さ
     public Color lineColor = Color.white; // レイの色
+=======
+>>>>>>> Stashed changes
 
     void Start()
     {
         positions = new Vector3[numPoints];
+<<<<<<< Updated upstream
         SetupLineRenderer();
+=======
+>>>>>>> Stashed changes
         DrawBezierCurve();
     }
 
@@ -25,6 +35,7 @@ public class DynamicBezierCurve : MonoBehaviour
         DrawBezierCurve();
     }
 
+<<<<<<< Updated upstream
     void SetupLineRenderer()
     {
         lineRenderer.startWidth = lineWidth;
@@ -34,6 +45,8 @@ public class DynamicBezierCurve : MonoBehaviour
         lineRenderer.endColor = lineColor;
     }
 
+=======
+>>>>>>> Stashed changes
     void DrawBezierCurve()
     {
         for (int i = 0; i < numPoints; i++)
